@@ -1,0 +1,9 @@
+﻿<rules-extension-properties>
+  <account-provisioning>
+    <container>
+      <password>KezetegUv5w*</password>
+      <root>DC=fabrikam,DC=com</root>
+      <users>OU=Users</users>
+    </container>
+  </account-provisioning>
+</rules-extension-properties>
