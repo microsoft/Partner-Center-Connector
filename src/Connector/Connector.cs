@@ -86,7 +86,7 @@ namespace Microsoft.PartnerCenter.Connector
         };
 
         /// <summary>
-        /// Used to the extnesible management agent the session is over and to allow code cleanup. 
+        /// Used by the management agent to allow for code cleanup. 
         /// </summary>
         /// <param name="importRunStep"></param>
         /// <returns></returns>
@@ -132,7 +132,7 @@ namespace Microsoft.PartnerCenter.Connector
         }
 
         /// <summary>
-        /// Presists a batch of entries in the connected system. Called for multiple entries that are imported. 
+        /// Persists a batch of entries in the connected system. Called for multiple entries that are imported. 
         /// </summary>
         /// <param name="importRunStep">A <see cref="GetImportEntriesRunStep"/> object that contains import information.</param>
         /// <returns>
@@ -162,7 +162,7 @@ namespace Microsoft.PartnerCenter.Connector
         }
 
         /// <summary>
-        /// Gets the schema.
+        /// Gets the schema for the connected system (Partner Center).
         /// </summary>
         /// <param name="configParameters">The configuration parameters.</param>
         /// <returns></returns>
@@ -193,7 +193,7 @@ namespace Microsoft.PartnerCenter.Connector
 
             // This dictionary will contain a complete list of all customer identifiers that are processed. These
             // identifiers will be used to obtain the users that belong to the customers that were processed.
-            _customersInfo = new Dictionary<string, string>(); ;
+            _customersInfo = new Dictionary<string, string>();
             // Obtain the collection of customer broken out by page size. This is required because the synchronization 
             // will only import a set size of entries at once. The page size is controlled by the ImportDefaultPageSize
             // and ImportMaxPageSize properties. 
@@ -205,7 +205,7 @@ namespace Microsoft.PartnerCenter.Connector
         }
 
         /// <summary>
-        /// Gets a result of parameter validations by the extension. 
+        /// Validates the configurations parameters.
         /// </summary>
         /// <param name="configParameters">Contains a collection of <see cref="ConfigParameter"/> objects.</param>
         /// <param name="page">The <see cref="ConfigParameterPage"/> which contains the parameters</param>
@@ -296,7 +296,7 @@ namespace Microsoft.PartnerCenter.Connector
 
             // Add the connector space objects for customers obtained using the Partner Center API.
             csentries.AddRange(
-               _customersEnumerator.Current.Items.Select(c => GetCsEntryChange(c, c.CompanyProfile, c.Id, "customer")));
+                _customersEnumerator.Current.Items.Select(c => GetCsEntryChange(c, c.CompanyProfile, c.Id, "customer")));
             // Add all of the customer identifiers from the current page of records to the collection.
             foreach (Customer c in _customersEnumerator.Current.Items)
             {

@@ -1,7 +1,7 @@
 # Partner Center Connector
 Since it is not supported for a partner to redirect a Microsoft online cloud customer to their 
 multi-tenant infrastructure either for federation or synchronization this sample was developed.
-It is a management agent and metaverse extension for Microsoft Identity Manager 2016,
+It is a management agent and metaverse extension for Microsoft Identity Manager,
 that leverages the Partner Center API to synchronize customer and users to the partner's 
 infrastructure. With this sample and Active Directory Federation Services (ADFS) it is possible 
 to utilize the objects in the multi-tenant directory for authorization and Azure AD for authentication.
@@ -15,6 +15,12 @@ when the service was installed.
 
 Next you will need to create the required objects in metaverse. These objects are required in order for the management 
 agent to perform all operations as excepted. Follow the steps below in order to create the required objects. 
+
+### Prerequisites 
+This solution is designed for use with Microsoft Forefront Identity Manager 2010 R2 or Microsoft Identity Manager 2016.
+In order to compile the source code you will need to add a reference to _Microsoft.MetadirectoryServicesEx.dll_. You can find 
+this file in the _bin_ directory where you have installed the Synchronization Service. The version referenced by the source 
+should match the version you have deployed.  
 
 ### Add the _Customer_ Object Type
 1. Open the _Synchronization Service Manager_ and then click on _Metaverse Designer_

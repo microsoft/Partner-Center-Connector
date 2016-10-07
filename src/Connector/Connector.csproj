@@ -42,16 +42,16 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\Microsoft.MetadirectoryServicesEx.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Store.PartnerCenter, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Store.PartnerCenter.1.1.0.1\lib\net45\Microsoft.Store.PartnerCenter.dll</HintPath>
+    <Reference Include="Microsoft.Store.PartnerCenter, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Store.PartnerCenter.1.2.0.1\lib\net45\Microsoft.Store.PartnerCenter.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Store.PartnerCenter.Extensions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Store.PartnerCenter.1.1.0.1\lib\net45\Microsoft.Store.PartnerCenter.Extensions.dll</HintPath>
+    <Reference Include="Microsoft.Store.PartnerCenter.Extensions, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Store.PartnerCenter.1.2.0.1\lib\net45\Microsoft.Store.PartnerCenter.Extensions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Store.PartnerCenter.Models, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Store.PartnerCenter.1.1.0.1\lib\net45\Microsoft.Store.PartnerCenter.Models.dll</HintPath>
+    <Reference Include="Microsoft.Store.PartnerCenter.Models, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Store.PartnerCenter.1.2.0.1\lib\net45\Microsoft.Store.PartnerCenter.Models.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
